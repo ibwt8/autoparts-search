@@ -1,0 +1,354 @@
+.pageHeading {
+  padding: 48px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eyebrow {
+  color: #5275a0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.eyebrow span {
+  width: 6px;
+  height: 6px;
+  background: #5488e9;
+  border-radius: 50%;
+}
+.pageHeading h1 {
+  font-size: clamp(27px, 3vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1.2px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+.pageHeading p {
+  margin: 0;
+  color: #6d7b8c;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 620px;
+}
+.headingMark {
+  border: 1px solid #e0e8f1;
+  background: #edf2f8;
+  border-radius: 22px;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  color: #7791af;
+  transform: rotate(-8deg);
+  margin-right: 7px;
+}
+.headingMark svg {
+  width: 38px;
+  height: 38px;
+}
+.mobileBreak {
+  display: none;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e1e7ee;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #172c4403;
+}
+.searchCard {
+  padding: 28px 30px;
+  display: grid;
+  grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
+  gap: 30px;
+}
+.brandStep {
+  border-left: 1px solid var(--line);
+  padding-left: 30px;
+  min-width: 0;
+}
+.stepHeading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 23px;
+}
+.stepHeading h2 {
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.5;
+}
+.stepNumber {
+  width: 27px;
+  height: 27px;
+  border-radius: 7px;
+  display: inline-grid;
+  place-items: center;
+  background: #ebf2ff;
+  color: #3267cd;
+  font-size: 10px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.stepNumberMuted {
+  background: #f0f3f6;
+  color: #9aa5b2;
+}
+.stepInactive .stepHeading h2 {
+  color: #65758a;
+}
+.formLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #65758a;
+  margin-bottom: 9px;
+}
+.searchInputWrap {
+  position: relative;
+}
+.articleInput {
+  width: 100%;
+  border: 1px solid #dce3ed;
+  color: inherit;
+  padding: 13px 42px;
+  border-color: #dce3ed;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  background: #fbfcfe;
+}
+.articleInput::placeholder {
+  color: #a0abba;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.articleInput:focus {
+  border-color: #87aaf1;
+  box-shadow: 0 0 0 3px #2563eb12;
+  background: white;
+}
+.searchIcon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #90a1b6;
+  pointer-events: none;
+}
+.clearInput {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 0;
+  font-size: 23px;
+  color: #7a8798;
+  border-radius: 5px;
+}
+.clearInput:hover {
+  background: #eef2f7;
+}
+.fieldHelp {
+  color: #65758a;
+  font-size: 11px;
+  margin: 10px 0 0;
+  line-height: 1.7;
+}
+.brandHint {
+  color: #65758a;
+  font-size: 12px;
+  margin: 33px 0 0;
+  max-width: 320px;
+  line-height: 1.9;
+}
+.countLabel {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border: 1px solid #e0e6ed;
+  background: #eef2f6;
+  border-radius: 5px;
+  color: #5c6d83;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+.resultsSection {
+  margin-top: 32px;
+}
+.resultsHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.resultsHeading h2 {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.resultsHeading p {
+  font-size: 11px;
+  margin: 0;
+  color: #65758a;
+}
+.resultsNote {
+  font-size: 10px;
+  color: #8b98a8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resultsNote span {
+  font-size: 20px;
+}
+.resultsCard {
+  overflow: hidden;
+}
+.emptyState {
+  min-height: 270px;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyIcon {
+  color: #91a3ba;
+  background: #f0f4f9;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.emptyState > svg {
+  color: #91a3ba;
+  margin-bottom: 20px;
+}
+.emptyState h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 9px;
+}
+.emptyState p {
+  color: #65758a;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+}
+.flowHint {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  color: #8f9bac;
+  font-size: 9px;
+  margin-top: 25px;
+}
+.flowHint span {
+  padding: 5px 9px;
+  border: 1px solid #e7ecf2;
+  border-radius: 5px;
+}
+.flowHint b {
+  color: #bcc6d1;
+  font-weight: 400;
+}
+.resultsFeedback {
+  padding: 28px;
+}
+.emptyMessage {
+  color: #7c8b9e;
+  font-size: 12px;
+  line-height: 1.8;
+}
+@media (min-width: 1500px) {
+  .pageHeading {
+    padding-top: 64px;
+    padding-bottom: 40px;
+  }
+  .emptyState {
+    min-height: 310px;
+  }
+}
+@media (max-width: 767px) {
+  .headingMark,
+  .resultsNote {
+    display: none;
+  }
+  .pageHeading {
+    padding: 32px 0 25px;
+  }
+  .pageHeading p {
+    font-size: 12px;
+  }
+  .mobileBreak {
+    display: block;
+  }
+  .searchCard {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 23px 20px;
+    gap: 22px;
+  }
+  .brandStep {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 22px;
+  }
+  .stepHeading {
+    margin-bottom: 18px;
+  }
+  .brandHint {
+    margin-top: 0;
+  }
+  .resultsSection {
+    margin-top: 26px;
+  }
+  .resultsHeading h2 {
+    font-size: 16px;
+  }
+  .emptyState {
+    min-height: 255px;
+  }
+}
+.resultGroups {
+  display: grid;
+  gap: 20px;
+}
+.offerGroup {
+  min-width: 0;
+  overflow: hidden;
+}
+.groupHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 19px 20px;
+  border-bottom: 1px solid #e8edf3;
+}
+.groupHeading h3 {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.groupEmpty {
+  padding: 24px 20px;
+  color: #65758a;
+  font-size: 12px;
+}

@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 100%;
+  padding: 10px 13px;
+  border: 1px solid #dce4ee;
+  border-radius: 7px;
+  background: #fff;
+  color: #40526b;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  overflow-wrap: anywhere;
+
+  &:hover {
+    border-color: #9ab8ef;
+    background: #f5f8ff;
+    color: #225cc3;
+  }
+
+  span {
+    color: #7c8a9b;
+  }
+}
+
+.selected,
+.selected:hover {
+  border-color: #9fbdf6;
+  background: #edf4ff;
+  color: #2460ce;
+
+  span {
+    color: #2460ce;
+  }
+}

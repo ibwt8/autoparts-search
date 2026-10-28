@@ -1,0 +1,97 @@
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.appContainer {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 1224px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.topbar {
+  background: #182b40;
+  color: #fff;
+}
+.topbarInner {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.9px;
+  white-space: nowrap;
+}
+.wordmark:hover {
+  color: #fff;
+}
+.wordmark svg {
+  color: #85adff;
+  margin-right: 11px;
+}
+.wordmarkDot {
+  color: #85adff;
+}
+.topbarDescription {
+  color: #aebdcd;
+  border-left: 1px solid #3b4a5c;
+  padding-left: 28px;
+  font-size: 12px;
+}
+.documentationLink {
+  margin-left: auto;
+  color: #c7d2df;
+  text-decoration: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.documentationLink:hover {
+  color: #fff;
+}
+.documentationLink span {
+  margin-left: 8px;
+}
+.main {
+  flex: 1;
+}
+.pageFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  font-size: 10px;
+  color: #9aa5b2;
+}
+@media (max-width: 767px) {
+  .appContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .topbarInner {
+    min-height: 68px;
+    gap: 12px;
+  }
+  .wordmark {
+    font-size: 20px;
+  }
+  .topbarDescription {
+    display: none;
+  }
+  .documentationLink {
+    font-size: 10px;
+  }
+  .pageFooter {
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1.8;
+  }
+}
